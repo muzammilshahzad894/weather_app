@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -6,10 +7,10 @@ const Navbar = () => {
       <div className="row">
         <div className="col-md-10 col-12 mx-auto">
           <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <i className="far fa-snowflake"></i> WeatherWeb
               <i className="far fa-snowflake"></i>
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -28,19 +29,19 @@ const Navbar = () => {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" to="/">
                     Home <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/weather">
+                  <Link className="nav-link" to="/weather">
                     Weather
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/about">
+                  <Link className="nav-link" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
